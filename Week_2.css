@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.fruts{
+    background-color: rgb(226, 71, 104);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 25px;
+}
+
+.fon{
+    background-color: rgb(236, 104, 148);
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+
+.text_shadow{
+    background-color: rgb(199, 21, 65);
+    
+} 
+
+
+.apple:hover{
+    color: lightgreen;
+    text-shadow: 3px 3px 3px green;}
+.orange:hover{
+    color: rgb(255, 163, 88);
+    text-shadow: 3px 3px 3px rgb(238, 113, 10);}
+.pineapple:hover{
+    color: rgb(255, 216, 88);
+    text-shadow: 3px 3px 3px rgb(238, 196, 10);}
+.pear:hover{
+    color: rgb(240, 102, 48);
+    text-shadow: 3px 3px 3px rgb(159, 226, 34);}
+.pear:hover{
+    color: rgb(240, 102, 48);
+    text-shadow: 3px 3px 3px rgb(159, 226, 34);}
+.cherry:hover{
+    color: rgb(240, 48, 64);
+    text-shadow: 3px 3px 3px rgb(214, 14, 14);}
+
+
+.list_square{
+    list-style-type: none;
+    position: relative;
+
+}
+
+.list_el{
+    padding-left: 40px;
+    width: 250px;
+    height:40px;
+    line-height: 40px;
+}
+
+.list_el:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    position: absolute;
+    left: 4%;
+    margin-top: 10px;
+}
+
+.back_blue{
+    background-color: rgb(51, 157, 255);
+}
+
+.back_aqua{
+    background-color: rgb(136, 189, 250);
+}
+
+.back_none{
+    background-color: lightgrey;
+}
+
+.back_none:before{
+    content: "✓";
+    color: green;
+    font-size: 25px;
+    line-height: 11px;
+}
+
+
+
+.text_gray{
+    color: gray;
+}
+
+.text_gray:hover{
+    text-shadow: 1px 1px 0px rgb(170, 170, 170)
+}
+
+.gray{
+    color: rgb(54, 54, 54);
+    text-shadow: 1px 1px 0px rgb(170, 170, 170)
+}
+
+.text_blue{
+    color: blue;
+}
