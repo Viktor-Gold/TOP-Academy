@@ -1,0 +1,84 @@
+
+/* Задание 2 */
+
+ol{
+    color: blueviolet;
+}
+
+ol > li::marker {
+    font-weight: bold;
+    color: black;
+}
+
+.li_1:hover{
+    color: rgb(200, 142, 255);
+    text-shadow: 5px 5px 5px rgb(170, 80, 255);
+}
+.li_2:hover{
+    color: rgb(255, 142, 255);
+    text-shadow: 5px 5px 5px rgb(255, 80, 246);
+}
+.li_3:hover{
+    color: rgb(223, 142, 255);
+    text-shadow: 5px 5px 5px rgb(205, 80, 255);
+}
+.li_4:hover{
+    color: rgb(172, 142, 255);
+    text-shadow: 5px 5px 5px rgb(127, 80, 255);
+}
+.li_5:hover{
+    color: rgb(96, 94, 255);
+    text-shadow: 5px 5px 5px rgb(98, 80, 255);
+}
+.li_6:hover{
+    color: rgb(142, 200, 255);
+    text-shadow: 5px 5px 5px rgb(80, 162, 255);
+}
+.li_7:hover{
+    color: rgb(142, 251, 255);
+    text-shadow: 5px 5px 5px rgb(124, 223, 253);
+}
+.li_8:hover{
+    color: rgb(14, 228, 121);
+    text-shadow: 5px 5px 5px rgb(74, 252, 148);
+}
+.li_9:hover{
+    color: rgb(18, 226, 53);
+    text-shadow: 5px 5px 5px rgb(33, 211, 48);
+}
+.li_10:hover{
+    color: rgb(145, 168, 14);
+    text-shadow: 5px 5px 5px rgb(180, 247, 25);
+}
+.li_11:hover{
+    color: rgb(241, 128, 35);
+    text-shadow: 5px 5px 5px rgb(255, 135, 80);
+}
+
+/* Задание 3 */
+.fon{
+    background-color: lightgrey;
+    width: 92%;
+    height: 650px;
+    padding: 50px;
+}
+
+.head{
+    background-color: rgb(15, 56, 78);
+    padding: 15px;
+    color: lightgrey;   
+}
+
+span{
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.block{
+    background-color: rgb(22, 88, 119);
+    width: 100%;
+    height: 100px;
+    color: lightgrey;
+    box-sizing: border-box;
+    padding: 20px;
+}
