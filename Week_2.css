@@ -41,6 +41,7 @@ body{
     color: rgb(240, 48, 64);
     text-shadow: 3px 3px 3px rgb(214, 14, 14);}
 
+    /*! Задание 2 */
 
 .list_square{
     list-style-type: none;
@@ -61,7 +62,7 @@ body{
     height: 15px;
     border: 1px solid;
     position: absolute;
-    left: 4%;
+    margin-left: -30px;
     margin-top: 10px;
 }
 
