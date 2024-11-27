@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, rgb(117, 180, 177), lightgrey);
+    background: linear-gradient(rgb(117, 180, 177), lightgrey);
 }
 
 .loading {
@@ -9,14 +9,14 @@ body{
     border: solid rgb(199, 122, 35);
     border-width: 5px;
     margin-left: 370px;
-    margin-top: 50px;
+    margin-top: 300px;
 }
 
 .loading_bar {
     width: 40px;
     height: 75px;
     background-color: orange;
-    animation: loading 5s ease-in-out infinite;
+    animation: loading 5s ease-in-out infinite alternate;
     position: relative;
 }
 
@@ -32,13 +32,152 @@ body{
 }
 
 /*! Задание 2 */
+#heart{
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 50px;
+    filter: grayscale(1);
+    transition: 1s;
+}
 
-.heart{
-    background-color: red;
-    width: 250px;
-    height: 250px;
-    border: none;
-    margin-top: 100px;
-    margin-left: 420px;
-    border-radius: 50px 50px 0 0;
+#heart:hover{
+    width: 600px;
+    margin-left: 250px;
+    filter: contrast(4) drop-shadow(50px -50px 50px rgb(240, 90, 115));
+    margin-top: -85px
+}
+
+
+/*! Задание 3 */
+#border{
+    background-color: rgb(255, 255, 255, 0);
+    text-shadow: 20px -5px 10px rgb(107, 47, 47);
+}
+
+h1{
+    padding-bottom: 30px;
+    color: rgb(34, 33, 33);
+}
+
+#book{
+    opacity: 0;
+    width: 150px;
+    margin-left: 400px;
+    animation: book 2s ease forwards;
+    position: absolute;
+    animation-delay: 0.5s;
+}
+#book:hover{
+    width: 170px;
+}
+
+#calc{
+    opacity: 0;
+    width: 100px;
+    margin-left: 260px;
+    animation: calc 2s ease forwards;
+    position: absolute;
+    animation-delay: 0s;
+}
+#calc:hover{
+    width: 120px;
+}
+
+#pallete{
+    opacity: 0;
+    width: 100px;
+    margin-left: 790px;
+    animation: pallete 2s ease forwards;
+    position: absolute;
+    animation-delay: 1.5s;
+}
+#pallete:hover{
+    width: 120px;
+}
+
+#paper{
+    opacity: 0;
+    width: 150px;
+    margin-left: 590px;
+    animation: paper 2s ease forwards;
+    position: absolute;
+    animation-delay: 1s;
+}
+#paper:hover{
+    width: 170px;
+}
+
+#pencil{
+    opacity: 0;
+    width: 85px;
+    margin-top: 200px;
+    margin-left: 540px;
+    animation: pencil 2s ease forwards;
+    animation-delay: 2s;
+}
+#pencil:hover{
+    width: 100px;
+}
+
+@keyframes calc{
+    from{
+        margin-top: 600px;
+
+    }
+
+    to{
+        rotate: 330deg;
+        margin-top: 90px;
+        opacity: 1;
+        filter: drop-shadow(20px 5px 15px rgb(80, 239, 250))
+    }
+}
+@keyframes book{
+    from{
+        margin-top: 600px;
+
+    }
+
+    to{
+        rotate: 350deg;
+        opacity: 1;
+        filter: drop-shadow(20px 5px 15px rgb(233, 228, 160))
+    }
+}
+@keyframes paper{
+    from{
+        margin-top: 600px;
+
+    }
+
+    to{
+        rotate: -350deg;
+        opacity: 1;
+        filter: drop-shadow(20px 5px 15px rgb(160, 194, 40))
+    }
+}
+@keyframes pallete{
+    from{
+        margin-top: 600px;
+    }
+
+    to{
+        rotate: -140deg;
+        margin-top: 90px;
+        opacity: 1;
+        filter: drop-shadow(-10px 10px 20px rgb(83, 17, 17))
+    }
+}
+@keyframes pencil{
+    from{
+        margin-top: 500px;
+        
+    }
+
+    to{
+        rotate: 810deg;
+        margin-top: 200px;
+        opacity: 1;
+        filter: drop-shadow(-10px -10px 15px rgb(211, 119, 83))
+    }
 }
