@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(to right, rgb(117, 180, 177), lightgrey);
+}
+
+.loading {
+    width: 400px;
+    height: 75px;
+    background-color: lightgray;
+    border: solid rgb(199, 122, 35);
+    border-width: 5px;
+    margin-left: 370px;
+    margin-top: 50px;
+}
+
+.loading_bar {
+    width: 40px;
+    height: 75px;
+    background-color: orange;
+    animation: loading 5s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes loading {
+
+    from{
+        left:0px;
+    }
+
+    to{
+        left: 360px;
+    }
+}
+
+/*! Задание 2 */
+
+.heart{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border: none;
+    margin-top: 100px;
+    margin-left: 420px;
+    border-radius: 50px 50px 0 0;
+}
