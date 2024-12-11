@@ -8,7 +8,7 @@ body{
 
 .book{
     background: linear-gradient(rgba(216, 12, 12, 0.7), rgb(192, 192, 192, 0.7));
-    margin-left: 250px;
+    margin-left: 32%;
     padding: 40px;
     width: 600px;
 }
@@ -68,7 +68,7 @@ h4{
     border: 2px solid silver;
     background-image: url(https://avatars.mds.yandex.net/i?id=26eca6a37ea1ff85f0bdeb523ad953cd_l-8229244-images-thumbs&n=13);
     background-size: cover;
-    width: 635px;
+    width: 640px;
     height: 350px;
     border-radius: 20px;
 }
@@ -185,7 +185,7 @@ menu{
 
 #aside_1{
     background-color: rgb(165, 42, 42, .5);
-    width: 100px;
+    width: 50%;
     height: 20px;
     padding: 30px;
 }
@@ -193,7 +193,7 @@ menu{
 #aside_2{
     background-color: rgb(165, 42, 42, .5);
     margin-top: 10px;
-    width: 100px;
+    width: 50%;
     height: 50px;
     padding: 30px;
 }
@@ -209,7 +209,7 @@ menu{
 
 main{
     background-color: rgb(155, 2, 155, .7);
-    margin-left: 180px;
+    margin-left: 10%;
     width: 75%;
     padding: 10px;
     padding-bottom: 40px;
@@ -289,4 +289,32 @@ hr{
 footer p{
     padding-top: 160px;
     text-align: center;
+}
+
+/*! Cat's */
+#cats_gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(206, 193, 193), rgb(102, 156, 190));
+    border: 2px solid brown;
+    margin-top: 200px;
+    height: 460px;
+    width: 416px;
+}
+
+#cats_gallery h1{
+    text-align: center;
+}
+
+iframe{
+    height: 256px;
+}
+
+#cats_gallery a img{
+    border: 1px solid red;
+}
+
+#cats_gallery hr{
+    margin-top: 40px;
 }
