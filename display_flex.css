@@ -4,11 +4,46 @@ body{
     background-attachment: fixed;
 }
 
+/*! Task 1 */
+
 .book{
     background: linear-gradient(rgba(216, 12, 12, 0.7), rgb(192, 192, 192, 0.7));
     margin-left: 250px;
     padding: 40px;
     width: 600px;
+}
+
+/*! Task 2 */
+/* html{
+    scroll-behavior: smooth;
+} */
+
+#Task_2{
+    margin-top: 100px;
+    padding: 20px;
+    background: linear-gradient(rgb(255, 192, 203, .6), rgb(248, 245, 245, .6))
+}
+
+#Task_2 hr{
+    margin-top: 20px;
+    border-color: blueviolet;
+}
+
+.contents{
+    border: 2px solid black;
+    background: linear-gradient(rgb(253, 165, 2, .8), rgb(250, 2, 2, .8));
+    width: 300px;
+    height: 250px;
+}
+
+.contents a{
+    color: black;
+    text-decoration: none;
+}
+
+.contents a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
 /*! Список продуктов */
@@ -87,165 +122,138 @@ h4{
 }
 
 /*! Панель управления */
-
 .panel{
-    margin-left: 40px;
-    margin-top: 100px;
-    width: 200px;
-    height: 300px;
     background-color: rgb(37, 31, 31);
-    color: gold;
-}
-
-.panel div{
-    height: 60px;
-    width: 200px;
-}
-
-.panel div:hover{
-    background-color: rgb(20, 17, 17);
+    width: 60px;
+    height: 270px;
+    padding: 10px;
 }
 
 .panel img{
-    position: absolute;
     width: 40px;
+}
+
+.panel div{
     margin: 10px;
 }
 
-.text{
+.strong div{
+    
     position: absolute;
-    margin-left: 80px;
-    margin-top: 25px;
-    width: 50px;
+    background-color: rgb(37, 31, 31);
+    color: rgb(255, 215, 0);
+    margin-top: -64px;
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-left: 60px;
+    height: 72px;
+    width: 160px;
+    box-sizing: border-box;
 }
+
+.strong div:hover{
+    background-color:  rgb(114, 79, 79);
+}
+
+
 
 
 /*! Структура сайта */
 #My_Site{
+    color: azure;
     background: linear-gradient(rgba(253, 252, 252, 0.6),rgb(128, 0, 128, .6));
     margin-top: 80px;
+    height: 600px;
 }
 
-#header, #menu{
-    margin-top: 20px;
-    background-color: rgba(17, 204, 188, 0.5);
-    width: 100%;
-    height: 50px;
+header{
+    background-color: rgb(104, 18, 104, .5);
+    padding: 30px;
+    border: 2px solid red;
 }
 
-#header p, #menu p{
+menu{
+    border: 2px solid red;
+    background-color: rgb(128, 30, 219, .5);
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.aside_block{
     float: left;
-    margin-left: 40px;
-    color: bisque;
 }
 
-#left_block{
-    width: 200px;
-    float: left;
-    margin-left: -90px;
+#aside_1{
+    background-color: rgb(165, 42, 42, .5);
+    width: 100px;
+    height: 20px;
+    padding: 30px;
 }
 
-.aside_1{
-    margin-top: 20px;
-    background-color: rgb(56, 125, 204, .4);
-    width: 200px;
-    height: 70px;
-    border-radius: 20px;
-}
-
-.aside_2{
-    margin-top: 20px;
-    background-color: rgb(56, 125, 204, .4);
-    width: 200px;
-    height: 120px;
-    border-radius: 20px;
-}
-
-.aside_1 p, .aside_2 p{
-    float: left;
-    padding-top: 10px;
-    margin-left: 40px;
-    color: bisque;
-}
-
-.aside_3{
-    border-radius: 20px;
-    margin-top: 20px;
-    background-color: rgb(56, 125, 204, .4);
-    width: 80px;
-    height: 210px;
-    float: right;
-}
-
-.text_vertical{
-    margin-top: 30px;
-}
-
-.aside_3 div{
-    text-align: center;
-    color: bisque;
-}
-
-#main_content{
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 220px;
-    background-color: rgb(80, 16, 16, .4);
-    color: bisque;
-    width: 835px;
-    height: 250px;
-}
-
-#main_content p{
-    padding-top: 20px;
-    margin-left: 40px;
-}
-
-.section_1, .section_2{
-    background-color: rgb(230, 22, 22, .4);
-    width: 700px;
-    height: 80px;
+#aside_2{
+    background-color: rgb(165, 42, 42, .5);
     margin-top: 10px;
-    margin-left: 40px;
+    width: 100px;
+    height: 50px;
+    padding: 30px;
 }
 
-.section_1 div{
-    padding-top: 10px;
-    padding-left: 47px;
+#aside_3{
+    float: right;
+    background-color: rgb(165, 42, 42, .5);
+    width: 40px;
+    height: 130px;
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+    background-color: rgb(155, 2, 155, .7);
+    margin-left: 180px;
+    width: 75%;
+    padding: 10px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
     
 }
 
-.section_2 div{
-    padding-top: 10px;
-    padding-left: 47px;
+.section_1, .section_2 {
+    background-color: rgb(255, 192, 203, 0.8);
+    height: 50px;
+    width: 90%;
+    padding: 10px;
+    padding-left: 50px;
+    margin: 10px;
+    
+}
+/* ! Footer Сайта */
+footer{
+    background-color: rgb(12, 37, 83);
+    margin-top: 100px;
+    height: 200px;
 }
 
-/*! Footer Сайта */
-#footer{
-    color: rgb(241, 235, 235);
-    margin-top: 40px;
-    width: 100%;
-    height: 200px;
+hr{
+    margin-top: -50px;
 }
 
 #left_footer{
     float: left;
-    padding-left: 170px;
+    padding-left: 20%;
     margin-top: 40px;
 }
 
 #center_footer{
     float: left;
-    padding-left: 300px;
+    padding-left: 22%;
     margin-top: 40px;
 }
 
 #icons{
-    /* border: 2px solid red; */
     position: absolute;
-    width: 250px;
+    width: 50px;
     height: 130px;
-    margin-left: 850px;
+    margin-left: 75%;
 }
 
 #icons img{
@@ -278,11 +286,7 @@ h4{
     box-shadow: 5px 5px 10px rgb(190, 25, 25);
 }
 
-#footer p{
+footer p{
     padding-top: 160px;
     text-align: center;
-}
-
-hr{
-    margin-top: -60px;
 }
