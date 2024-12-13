@@ -8,20 +8,20 @@ body{
 
 .book{
     background: linear-gradient(rgba(216, 12, 12, 0.7), rgb(192, 192, 192, 0.7));
-    margin-left: 32%;
+    margin: auto;
     padding: 40px;
     width: 600px;
 }
 
 /*! Task 2 */
-/* html{
-    scroll-behavior: smooth;
-} */
+html{
+    scroll-behavior: smooth;  /*! SCROLL страницы */
+}
 
 #Task_2{
     margin-top: 100px;
     padding: 20px;
-    background: linear-gradient(rgb(255, 192, 203, .6), rgb(248, 245, 245, .6))
+    background: linear-gradient(rgb(255, 192, 203, .6), rgb(248, 245, 245, .6));
 }
 
 #Task_2 hr{
@@ -123,173 +123,168 @@ h4{
 
 /*! Панель управления */
 .panel{
+    border-radius: 20px;
     background-color: rgb(37, 31, 31);
-    width: 60px;
-    height: 270px;
+    width: 50px;
+    height: 320px;
     padding: 10px;
+    color: transparent;
+}
+
+.panel:hover{
+    animation: panel 0.2s linear 1 forwards;
+
+}
+
+@keyframes panel {
+    from{
+        width:60px;
+    }
+    
+    to{
+        width: 200px;
+        color: gold;
+    } 
+}
+
+.string{
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.string div{
+    margin-top: -35px;
+    padding-left: 50px;
+    position: absolute;
+}
+
+.string:hover{
+    background-color: rgb(103, 145, 64);
 }
 
 .panel img{
+    margin-top: 15px;
     width: 40px;
 }
 
-.panel div{
-    margin: 10px;
-}
-
-.strong div{
-    
-    position: absolute;
-    background-color: rgb(37, 31, 31);
-    color: rgb(255, 215, 0);
-    margin-top: -64px;
-    padding-top: 30px;
-    padding-left: 10px;
-    margin-left: 60px;
-    height: 72px;
-    width: 160px;
-    box-sizing: border-box;
-}
-
-.strong div:hover{
-    background-color:  rgb(114, 79, 79);
-}
 
 
 
 
 /*! Структура сайта */
-#My_Site{
-    color: azure;
-    background: linear-gradient(rgba(253, 252, 252, 0.6),rgb(128, 0, 128, .6));
-    margin-top: 80px;
-    height: 600px;
-}
 
-header{
-    background-color: rgb(104, 18, 104, .5);
-    padding: 30px;
-    border: 2px solid red;
-}
+ #my_site {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    color: aliceblue;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 9%;
+  }
+  
+  #my_site div {
+    display: flex;
+    gap: 10px;
+  }
 
-menu{
-    border: 2px solid red;
-    background-color: rgb(128, 30, 219, .5);
-    padding: 10px;
-    padding-left: 30px;
-}
-
-.aside_block{
-    float: left;
-}
-
-#aside_1{
-    background-color: rgb(165, 42, 42, .5);
-    width: 50%;
-    height: 20px;
-    padding: 30px;
-}
-
-#aside_2{
-    background-color: rgb(165, 42, 42, .5);
-    margin-top: 10px;
-    width: 50%;
-    height: 50px;
-    padding: 30px;
-}
-
-#aside_3{
-    float: right;
-    background-color: rgb(165, 42, 42, .5);
-    width: 40px;
-    height: 130px;
-    text-align: center;
+  header {
+    background-color: rgb(46, 107, 148, 0.8);
     padding: 20px;
-}
-
-main{
-    background-color: rgb(155, 2, 155, .7);
-    margin-left: 10%;
+    padding-left: 50px;
     width: 75%;
-    padding: 10px;
-    padding-bottom: 40px;
-    box-sizing: border-box;
-    
-}
-
-.section_1, .section_2 {
-    background-color: rgb(255, 192, 203, 0.8);
-    height: 50px;
-    width: 90%;
+  }
+  
+  nav, footer {
+    background-color: rgb(7, 33, 63, 0.9);
     padding: 10px;
     padding-left: 50px;
-    margin: 10px;
-    
-}
-/* ! Footer Сайта */
-footer{
-    background-color: rgb(12, 37, 83);
-    margin-top: 100px;
-    height: 200px;
+    width: 75.8%;
+  }
+
+  main, #aside_right  {
+    background-color: rgb(46, 102, 148, 0.8);
+    text-align: center;
+  }
+
+  #aside_right {
+    display: flex;
+    align-items: center;
+    width: 5%;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 20px;
+  }
+  
+main {
+  width: 50%;
+  text-align: left;
+  padding: 25px;
 }
 
-hr{
-    margin-top: -50px;
+#aside_left{
+  width: 20%;
+}
+
+#aside_left aside{
+background-color:  rgb(46, 102, 148, 0.8);
+padding: 30px;
+}
+
+main section {
+  background-color: rgb(216, 0, 0, 0.3);
+  padding: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+footer{
+    height: 170px;
 }
 
 #left_footer{
-    float: left;
-    padding-left: 20%;
-    margin-top: 40px;
+   margin-left: 10%;
+   margin-top: 20px;
 }
 
 #center_footer{
-    float: left;
-    padding-left: 22%;
-    margin-top: 40px;
+    margin-top: -70px;
+    margin-left: 40%;
+}
+
+footer img{
+    width: 40px;
+    border-radius: 10px;
+    filter: grayscale(1);
+}
+
+footer img:hover{
+    filter: grayscale(0);
+    box-shadow: 5px 5px 10px gold;
 }
 
 #icons{
-    position: absolute;
-    width: 50px;
-    height: 130px;
     margin-left: 75%;
+    margin-top: -60px;
 }
 
-#icons img{
-    position: absolute;
-    border-radius: 7px;
-    filter: grayscale(1);
-    width: 40px;
-    margin-top: 50px;
+#icons:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
-#icons img:hover{
-    filter: grayscale(0);
-}
-
-.fb img:hover{
-    box-shadow: 5px 5px 10px rgb(38, 202, 202);
-}
-
-.insta{
-    margin-left: 60px;
-}
-.insta img:hover{
-    box-shadow: 5px 5px 10px rgb(38, 202, 202);
-}
-
-.yt{
-    margin-left: 120px;
-}
-.yt img:hover{
-    box-shadow: 5px 5px 10px rgb(190, 25, 25);
+footer hr{
+    margin-top: 40px;
+    width: 85%;
 }
 
 footer p{
-    padding-top: 160px;
-    text-align: center;
+    margin-left: 35%;
 }
+
 
 /*! Cat's */
 #cats_gallery{
@@ -298,23 +293,24 @@ footer p{
     align-items: center;
     background: linear-gradient(rgb(206, 193, 193), rgb(102, 156, 190));
     border: 2px solid brown;
-    margin-top: 200px;
+    margin-top: 600px;
     height: 460px;
     width: 416px;
 }
 
 #cats_gallery h1{
+    color: orangered;
+    text-decoration: none;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 iframe{
+    margin: 10px;
     height: 256px;
 }
 
 #cats_gallery a img{
-    border: 1px solid red;
-}
-
-#cats_gallery hr{
-    margin-top: 40px;
+    border: 1px solid rgb(197, 191, 191);
 }
